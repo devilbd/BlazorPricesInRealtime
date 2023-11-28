@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BlazorPricesInRealtime/bin/Debug/net8.0
+/BlazorPricesInRealtime/obj/Debug/net8.0
+/BlazorPricesInRealtime.Models/bin/Debug/net8.0
+/BlazorPricesInRealtime.Models/obj/Debug/net8.0
+/Models/obj/Debug/net8.0
+/Models/obj
+/BlazorPricesInRealtime.Models/obj
+/BlazorPricesInRealtime/obj
+/.vs/BlazorPricesInRealtime/FileContentIndex
