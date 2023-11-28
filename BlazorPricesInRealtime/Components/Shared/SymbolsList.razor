@@ -1,0 +1,22 @@
+﻿<div class="symbols-list-root">
+    @for (int i = 0; i < Symbols.Count; i++)
+    {
+        var symbol = Symbols[i];
+        <div class="symbol">
+            <div class="symbol-name">
+                @Symbols[i].Id
+            </div>
+            <div class="prices">
+                <div class="symbol-bid @HighLow(symbol.Bid, symbol.PrevBid)">
+                    @Symbols[i].Bid.ToString("n5")
+                </div>
+                <div class="symbol-spread">
+                    @Symbols[i].Spread.ToString("F1")
+                </div>
+                <div class="symbol-ask @HighLow(symbol.Ask, symbol.PrevAsk)">
+                    @Symbols[i].Ask.ToString("n5")
+                </div>
+            </div>
+        </div>
+    }
+</div>

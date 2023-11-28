@@ -1,0 +1,16 @@
+﻿.dark-theme {
+    --main-color: #d1d4dc;
+    --secondary-color: #fff;
+    --tertiary-color: #9ba5af;
+    --main-background-color: #212731;
+    --main-green: #26a69a;
+    --main-red: #ef5350;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: var(--main-background-color);
+    color: var(--main-color);
+}

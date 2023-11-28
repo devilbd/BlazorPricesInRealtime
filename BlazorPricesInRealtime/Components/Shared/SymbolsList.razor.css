@@ -1,0 +1,54 @@
+﻿.symbols-list-root {
+    display: inline-block;
+}
+
+.symbol {
+}
+
+.symbol-name
+ {
+    font-size: 20px;
+    color: var(--main-color);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.symbol-bid, .symbol-ask {
+    font-size: 18px;
+    flex: 1 auto;
+    padding: 25px 60px;
+    border-radius: 5px;
+}
+
+.symbol-bid {
+    border-right: 1px solid transparent!important;
+}
+
+.symbol-ask {
+    border-left: 1px solid transparent!important;
+}
+
+.symbol-spread {
+    position: absolute;
+    margin: 18px 140px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 7px;
+    width: 60px;
+}
+
+.high {
+    color: var(--main-red);
+    border: 1px solid var(--main-red);
+}
+
+.low {
+    color: var(--main-green);
+    border: 1px solid var(--main-green);
+}
