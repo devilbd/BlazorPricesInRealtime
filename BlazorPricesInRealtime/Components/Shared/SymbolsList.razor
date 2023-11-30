@@ -1,6 +1,8 @@
 ﻿@page "/symbols-list"
 <div class="symbols-list-root">
-    @for (int i = 0; i < Symbols.Count; i++)
+    <SearchList />
+
+    @* @for (int i = 0; i < Symbols.Count; i++)
     {
         var symbol = Symbols[i];
         <div class="symbol">
@@ -21,5 +23,5 @@
                 </button>
             </div>
         </div>
-    }
+    } *@
 </div>

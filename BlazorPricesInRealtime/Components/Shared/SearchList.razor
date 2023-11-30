@@ -1,0 +1,15 @@
+﻿<div class="search-list-root">
+    <MudAutocomplete 
+        T="string" 
+        Label="Search"
+        ResetValueOnEmptyText="true"
+        @bind-Value="SelectedSymbol" 
+        SearchFunc="@OnSymbolSelected" 
+        AdornmentIcon="@Icons.Material.Filled.Search" 
+        AdornmentColor="Color.Primary"
+        IsOpenChanged="HandleOpenChanged"
+         />
+        <div>
+            @SelectedSymbol
+        </div>
+</div>

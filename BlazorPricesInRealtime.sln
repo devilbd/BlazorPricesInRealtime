@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPricesInRealtime", "BlazorPricesInRealtime\BlazorPricesInRealtime.csproj", "{6544F350-8DC1-432B-A1F9-11EAE44E67A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPricesInRealtime.Models", "BlazorPricesInRealtime.Models\BlazorPricesInRealtime.Models.csproj", "{C8465EE2-2811-465D-87E2-B47DABC675DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPricesInRealtime.Models", "BlazorPricesInRealtime.Models\BlazorPricesInRealtime.Models.csproj", "{C8465EE2-2811-465D-87E2-B47DABC675DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
