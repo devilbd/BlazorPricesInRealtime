@@ -3,52 +3,82 @@
 }
 
 .symbol {
+    border-radius: 5px;
+    border: 1px solid var(--mud-palette-lines-default);
+    padding: 10px 0;
+    margin: 5px;
 }
 
-.symbol-name
- {
+.symbol-name {
     font-size: 20px;
-    color: var(--main-color);
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--mud-palette-white);
+    margin-top: 5px;
 }
 
 .prices {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
+    position: relative;
 }
 
 .symbol-bid, .symbol-ask {
     font-size: 18px;
     flex: 1 auto;
-    padding: 25px 60px;
-    border-radius: 5px;
+    padding: 0 60px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid transparent;
 }
 
-.symbol-bid {
-    border-right: 1px solid transparent!important;
-}
+    .symbol-bid:hover {
+        border: 1px solid var(--mud-palette-lines-default);
+        border-right: 1px solid transparent !important;
+        border-left: 1px solid transparent;
+        cursor: pointer;
+    }
 
-.symbol-ask {
-    border-left: 1px solid transparent!important;
-}
+    .symbol-ask:hover {
+        border: 1px solid var(--mud-palette-lines-default);
+        border-left: 1px solid transparent !important;
+        border-right: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .symbol-bid div {
+        margin: 5px 20px;
+        flex: 1 auto;
+        text-align: left;
+        width: 100%;
+    }
+    .symbol-ask div {
+        margin: 5px 20px;
+        flex: 1 auto;
+        text-align: right;
+        width: 100%;
+    }
 
 .symbol-spread {
     position: absolute;
-    margin: 18px 140px;
-    border: 1px solid var(--tertiary-color);
+    margin: 48px 42%;
+    border: 1px solid var(--mud-palette-tertiary);
+    border-bottom: none;
     border-radius: 5px;
     padding: 7px;
     width: 60px;
+    background-color: var(--mud-palette-black);
+    z-index: 1000;
+    box-shadow: 0 0 8px var(--mud-palette-lines-default);
 }
 
 .high {
-    color: var(--main-red);
-    border: 1px solid var(--main-red);
+    color: var(--mud-palette-secondary);
+    // border: 1px solid var(--mud-palette-secondary);
 }
 
 .low {
-    color: var(--main-green);
-    border: 1px solid var(--main-green);
+    color: var(--mud-palette-success);
+    // border: 1px solid var(--mud-palette-success);
 }

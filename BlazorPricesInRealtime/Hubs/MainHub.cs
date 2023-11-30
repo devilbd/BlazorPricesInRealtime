@@ -6,7 +6,7 @@ namespace BlazorPricesInRealtime.Hubs;
 
 public class MainHub : Hub
 {
-    private const int _TicksPublishTime = 250;
+    private const int _TicksPublishTime = 1000;
     private object _TicksTimerState;
     private List<string> _SubscribedSymbols { get; set; }
     private CancellationTokenSource _CancellationTokenSource { get; set; } = new CancellationTokenSource();

@@ -32,6 +32,16 @@ public partial class SymbolsList : ComponentBase
         await _HubConnection.SendAsync("Subscribe", Symbols.Select(x => x.Id).ToList());
     }
 
+    public void Buy()
+    {
+
+    }
+
+    public void Sell()
+    {
+
+    }
+
     private void ConnectionFactory()
     {
         _HubConnection = new HubConnectionBuilder().WithUrl(Navigation.ToAbsoluteUri("/main-hub")).WithAutomaticReconnect().WithKeepAliveInterval(TimeSpan.FromSeconds(10)).AddMessagePackProtocol().Build();

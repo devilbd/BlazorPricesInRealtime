@@ -8,15 +8,17 @@
                 @Symbols[i].Id
             </div>
             <div class="prices">
-                <div class="symbol-bid @HighLow(symbol.Bid, symbol.PrevBid)">
-                    @Symbols[i].Bid.ToString("n5")
-                </div>
+                <button class="symbol-bid @HighLow(symbol.Bid, symbol.PrevBid)" @onclick="Buy">
+                    <div>Buy</div>
+                    <div>@Symbols[i].Bid.ToString("n5")</div>
+                </button>
                 <div class="symbol-spread">
                     @Symbols[i].Spread.ToString("F1")
                 </div>
-                <div class="symbol-ask @HighLow(symbol.Ask, symbol.PrevAsk)">
-                    @Symbols[i].Ask.ToString("n5")
-                </div>
+                <button class="symbol-ask @HighLow(symbol.Ask, symbol.PrevAsk)" @onclick="Sell">
+                    <div>Sell</div>
+                    <div>@Symbols[i].Ask.ToString("n5")</div>
+                </button>
             </div>
         </div>
     }
