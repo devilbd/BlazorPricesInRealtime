@@ -1,6 +1,20 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+<MudGrid Justify="Justify.FlexStart" Spacing="0" Style="height: 100%" Class="d-flex align-start flex-grow-1 gap-4">
+    <MudItem Class="d-flex" Style="height: 100%">
+        <MudPaper Width="250px" Height="100%" Class="py-3" Elevation="0">
+            <MudNavMenu>
+                <MudText Typo="Typo.h6" Class="px-4">Blazor prices in realtime</MudText>
+                <MudDivider Class="my-2" />
+                <MudNavLink Href="/symbols-list">Symbols list</MudNavLink>
+                <MudNavLink Href="/about">About</MudNavLink>
+            </MudNavMenu>
+        </MudPaper>
+    </MudItem>
+    <MudItem Class="d-flex flex-1" Style="height: 100%">
+        @Body
+    </MudItem>
+</MudGrid>
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.

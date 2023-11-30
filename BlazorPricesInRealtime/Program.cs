@@ -1,12 +1,14 @@
 using BlazorPricesInRealtime.Components;
 using BlazorPricesInRealtime.Hubs;
 using MessagePack;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
+
+builder.Services.AddMudServices();
 
 builder.Services.AddResponseCompression(opts =>
 {
